@@ -1,0 +1,53 @@
+{
+	"name": "heroyt/tournament-generator",
+	"description": "A set of classes used to create multiple kinds of tournament brackets in PHP.",
+	"homepage": "https://github.com/Heroyt/tournament-generator",
+	"keywords": [
+		"generator",
+		"tournament",
+		"tournaments",
+		"scheduler",
+		"teams",
+		"bracket"
+	],
+	"support": {
+		"email": "vojik@wboy.cz",
+		"docs": "https://heroyt.github.io/tournament-generator/",
+		"wiki": "https://tournament-generator.readthedocs.io/en/latest/",
+		"source": "https://github.com/Heroyt/tournament-generator"
+	},
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Tomáš Vojík",
+			"email": "vojik@wboy.cz",
+			"role": "lead"
+		}
+	],
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"config": {
+		"platform": {
+			"php": "7.4.0"
+		},
+		"optimize-autoloader": true,
+		"sort-packages": true
+	},
+	"scripts": {
+		"docs": "php phpDocumentor.phar -s src/ -t docs/api/",
+		"doxygen": "doxygen",
+		"test": "./vendor/bin/phpunit"
+	},
+	"require": {
+		"php": ">=7.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"TournamentGenerator\\": "src/TournamentGenerator/"
+		}
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^9.5"
+	}
+}
